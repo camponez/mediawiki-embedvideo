@@ -354,6 +354,11 @@ As of version 2.x, EmbedVideo supports embedding video content from the followin
 | 
 | 
 |-
+! [https://d.tube DTube]
+| colspan="2"|<code>dtube</code>
+| <nowiki>bisodun/fj12zn02</nowiki>
+| <nowiki>https://d.tube/#!/v/bisodun/fj12zn02</nowiki>
+|-
 ! [http://edutopia.org Edutopia]
 | 
 | 

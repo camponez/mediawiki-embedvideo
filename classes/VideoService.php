@@ -77,6 +77,18 @@ class VideoService {
 			'id_regex'		=> [
 				'#^([\d]+)$#is'
 			]
+  		],
+		'dtube' => [
+			'embed'			=> '<iframe src="https://emb.d.tube/#!/%1$s" width="%2$d" height="%3$d" frameborder="0" allowfullscreen="true"></iframe>',
+			'default_width'	=> 640,
+			'default_ratio'	=> 1.77777777777778, // (16 / 9)
+			'https_enabled'	=> true,
+			'url_regex'		=> [
+            '#emb\.d\.tube/\#\!/([a-z)+)/([a-zA-Z0-9]+)#is'
+			],
+			'id_regex'		=> [
+                '#^([a-z)+)/([a-zA-Z0-9]+)#is'
+			]
 		],
 		'blip' => [
 			'default_width'	=> 640,
@@ -523,6 +535,7 @@ class VideoService {
 		'collegehumor.com'			=> 'collegehumor',
 		'dailymotion.com'			=> 'dailymotion',
 		'divshare.com'				=> 'divshare',
+		'd.tube'					=> 'dtube',
 		'funnyordie.com'			=> 'funnyordie',
 		'facebook.com'				=> 'facebook',
 		'gfycat.com'				=> 'gfycat',
